@@ -358,3 +358,35 @@ del { color: #888; }
 .qa-fullw{width:100% !important;height:auto !important}
 .qa-fineprint{margin-top:12px !important;color:#555 !important;font-size:0.8rem !important}
 .qa-mt10{margin-top:10px !important}
+
+/* ============================================================
+   DESKTOP LAYOUT — platform addition 2026-09-24 (user request: "resolution is tight").
+   Additive only: nothing below 900px changes. The reading column widens in steps
+   but stays capped so body lines remain readable (about 85–90 characters). The hero
+   image breaks out wider than the text column on large screens to use the space.
+   ============================================================ */
+@media (min-width: 900px) {
+  .container { max-width: 780px; padding: 0 40px; }
+  body { font-size: 1.0625rem; }
+  section { padding: 72px 0; }
+  h1 { font-size: 2.7rem; }
+  h2 { font-size: 1.95rem; }
+  .qa-w480 { max-width: 540px !important; }
+  .qa-w640 { max-width: 700px !important; }
+  .guarantee-box p { max-width: 580px; }
+  #footer-legal .footer-disclaimer { max-width: 620px; }
+}
+@media (min-width: 1100px) {
+  #hook .img-block {
+    width: min(1080px, calc(100vw - 96px));
+    margin-left: calc(50% - min(540px, calc(50vw - 48px)));
+  }
+}
+@media (min-width: 1280px) {
+  .container { max-width: 860px; padding: 0 48px; }
+  body { font-size: 1.125rem; }
+  section { padding: 84px 0; }
+  h1 { font-size: 3.1rem; }
+  h2 { font-size: 2.15rem; }
+  .qa-w640 { max-width: 764px !important; }
+}

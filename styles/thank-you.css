@@ -274,3 +274,23 @@ em { font-style: italic; }
 .qa-store-link{color:#8e3a52 !important;font-size:0.9rem !important;text-decoration:underline !important}
 .qa-fineprint{margin-top:12px !important;color:#555 !important;font-size:0.8rem !important}
 .qa-mt10{margin-top:10px !important}
+
+/* ============================================================
+   DESKTOP LAYOUT — platform addition 2026-09-24 (user request: "resolution is tight").
+   Additive only: nothing below 900px changes; text column capped for readability.
+   ============================================================ */
+@media (min-width: 900px) {
+  .container { max-width: 740px; padding: 0 40px; }
+  body { font-size: 1.0625rem; }
+  section { padding: 60px 0; }
+  h1 { font-size: 2.35rem; }
+  h2 { font-size: 1.6rem; }
+  #confirmation .confirm-sub { max-width: 580px; }
+  .guarantee-reminder-box p { max-width: 540px; }
+  #footer-legal .footer-disclaimer { max-width: 600px; }
+}
+@media (min-width: 1280px) {
+  .container { max-width: 800px; padding: 0 48px; }
+  body { font-size: 1.125rem; }
+  h1 { font-size: 2.6rem; }
+}
