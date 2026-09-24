@@ -290,7 +290,15 @@ em { font-style: italic; }
   #footer-legal .footer-disclaimer { max-width: 600px; }
 }
 @media (min-width: 1280px) {
-  .container { max-width: 800px; padding: 0 48px; }
+  html { font-size: 17px; }
+  .container { max-width: 900px; padding: 0 56px; }
   body { font-size: 1.125rem; }
-  h1 { font-size: 2.6rem; }
+  section { padding: 72px 0; }
+  h1 { font-size: 2.8rem; }
+  #confirmation .confirm-sub { max-width: 680px; }
+  .guarantee-reminder-box p { max-width: 640px; }
+}
+@media (min-width: 1440px) {
+  html { font-size: 18px; }
+  .container { max-width: 920px; padding: 0 60px; }
 }

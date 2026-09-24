@@ -383,10 +383,21 @@ del { color: #888; }
   }
 }
 @media (min-width: 1280px) {
-  .container { max-width: 860px; padding: 0 48px; }
+  html { font-size: 17px; }
+  .container { max-width: 1000px; padding: 0 56px; }
   body { font-size: 1.125rem; }
-  section { padding: 84px 0; }
-  h1 { font-size: 3.1rem; }
-  h2 { font-size: 2.15rem; }
-  .qa-w640 { max-width: 764px !important; }
+  section { padding: 92px 0; }
+  h1 { font-size: 3.2rem; }
+  h2 { font-size: 2.2rem; }
+  .qa-w480 { max-width: 620px !important; }
+  .qa-w640 { max-width: 860px !important; }
+  #hook .img-block {
+    width: min(1200px, calc(100vw - 96px));
+    margin-left: calc(50% - min(600px, calc(50vw - 48px)));
+  }
+}
+@media (min-width: 1440px) {
+  html { font-size: 18px; }
+  .container { max-width: 1080px; padding: 0 60px; }
+  .qa-w640 { max-width: 920px !important; }
 }
