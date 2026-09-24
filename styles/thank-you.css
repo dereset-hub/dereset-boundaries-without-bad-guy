@@ -1,0 +1,276 @@
+/* PR-002 thank-you.html styles, extracted verbatim from the supplied <style> block (platform QA: CSP style-src has no 'unsafe-inline'). */
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  background: #faf9f6;
+  color: #1a1a1a;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.75;
+}
+
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section { padding: 48px 0; }
+section:nth-child(even) { background: #f0ede6; }
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  font-weight: 900;
+  font-family: 'Playfair Display', system-ui, -apple-system, sans-serif;
+  margin-bottom: 12px;
+}
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.3;
+  font-weight: 800;
+  font-family: 'Playfair Display', system-ui, -apple-system, sans-serif;
+  margin-bottom: 16px;
+}
+h3 {
+  font-size: 1.1rem;
+  line-height: 1.35;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin-bottom: 6px;
+}
+p { margin-bottom: 1.05em; }
+p:last-child { margin-bottom: 0; }
+strong { font-weight: 700; }
+em { font-style: italic; }
+
+.section-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #aaa;
+  font-family: system-ui, sans-serif;
+  border-top: 1px solid #e0ddd6;
+  padding-top: 4px;
+  margin-bottom: 24px;
+}
+#confirmation .section-label { color: #b0687e; border-color: #5a2c3a; }
+
+/* ============================================================
+   CONFIRMATION HEADER
+   ============================================================ */
+#confirmation {
+  background: #2e1a22;
+  color: #fff;
+  padding: 56px 0 48px;
+  text-align: center;
+}
+#confirmation h1 { color: #fff; }
+.checkmark {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background: #f0c234;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkmark svg { width: 32px; height: 32px; }
+#confirmation .confirm-sub {
+  color: #ddc0c8;
+  font-size: 1.02rem;
+  max-width: 460px;
+  margin: 0 auto;
+}
+#confirmation .confirm-email-note {
+  color: #b591a0;
+  font-size: 0.85rem;
+  font-family: system-ui, sans-serif;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* ============================================================
+   ACCESS / DOWNLOAD CARDS
+   ============================================================ */
+.access-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #d8d4cc;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.access-card:last-child { margin-bottom: 0; }
+.access-thumb {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.access-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.access-text { flex: 1; }
+.access-text .access-title {
+  font-weight: 700;
+  font-family: system-ui, sans-serif;
+  font-size: 0.98rem;
+  margin-bottom: 2px;
+}
+.access-text .access-sub {
+  font-size: 0.85rem;
+  color: #666;
+  font-family: system-ui, sans-serif;
+}
+.access-btn {
+  flex-shrink: 0;
+  display: inline-block;
+  background: #8e3a52;
+  color: #fff;
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 10px 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.access-btn:hover { background: #6f2d40; }
+
+/* ============================================================
+   START HERE — STEP BLOCKS
+   ============================================================ */
+.start-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.start-step:last-child { margin-bottom: 0; }
+.start-step-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #8e3a52;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.start-step-body h3 { margin-bottom: 4px; }
+.start-step-body p { font-size: 0.95rem; color: #333; margin-bottom: 0; }
+.start-step-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8e3a52;
+  font-family: system-ui, sans-serif;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* ============================================================
+   GUARANTEE REMINDER
+   ============================================================ */
+.guarantee-reminder-box {
+  border: 2px solid #8e3a52;
+  padding: 28px 24px;
+  text-align: center;
+  background: #fff;
+}
+.guarantee-reminder-box .badge-circle {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+}
+.guarantee-reminder-box .badge-circle img { width: 100%; height: 100%; object-fit: contain; }
+.guarantee-reminder-box h2 { margin-top: 0; font-size: 1.2rem; }
+.guarantee-reminder-box p { max-width: 460px; margin: 10px auto 0; font-size: 0.95rem; }
+.support-link {
+  display: block;
+  margin-top: 16px;
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: #8e3a52;
+}
+
+/* ============================================================
+   CREATOR NOTE
+   ============================================================ */
+.creator-note {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.creator-note-photo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.creator-note-photo img { width: 100%; height: 100%; object-fit: cover; }
+.creator-note-text p { font-size: 0.95rem; }
+.creator-note-signoff {
+  font-family: system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+#footer-legal {
+  background: #111;
+  color: #888;
+  padding: 32px 0;
+  font-size: 0.8rem;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  line-height: 1.7;
+}
+#footer-legal a { color: #888; text-decoration: underline; }
+#footer-legal .footer-links { margin-bottom: 10px; }
+#footer-legal .footer-name { margin-bottom: 10px; }
+#footer-legal .footer-disclaimer { color: #666; font-size: 0.75rem; max-width: 520px; margin: 10px auto 0; }
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+@media (max-width: 600px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+  section { padding: 36px 0; }
+  #confirmation { padding: 44px 0 36px; }
+
+  .access-card { flex-direction: column; align-items: flex-start; text-align: left; }
+  .access-btn { align-self: stretch; text-align: center; }
+
+  .creator-note { flex-direction: column; align-items: center; text-align: center; }
+
+  .guarantee-reminder-box { padding: 22px 16px; }
+}
+
+@media (max-width: 375px) {
+  h1 { font-size: 1.3rem; }
+  .container { padding: 0 16px; }
+}
+
+/* ---- Former inline style= attributes (platform QA). !important reproduces inline-style precedence exactly. ---- */
+.qa-label-alt{color:#b591a0 !important;border-color:#5a2c3a !important}
+.qa-center-mt20{text-align:center !important;margin-top:20px !important}
+.qa-store-link{color:#8e3a52 !important;font-size:0.9rem !important;text-decoration:underline !important}
+.qa-fineprint{margin-top:12px !important;color:#555 !important;font-size:0.8rem !important}
+.qa-mt10{margin-top:10px !important}
